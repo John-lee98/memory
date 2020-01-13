@@ -1,0 +1,109 @@
+body {
+  font-family: Arial;
+}
+
+header {
+  color: dodgerblue;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid dodgerblue;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4em 0 4em;
+}
+
+header h1 {
+  font-size: 1.65em;
+}
+
+main {
+  margin-top: 90px;
+}
+
+#cards {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.blank {
+  transition: background-color 0.5s ease;
+  background-color: dodgerblue;
+}
+
+.hidden {
+  opacity: 0;
+  /*transition: opacity 1.5s ease;*/
+}
+
+.card {
+  padding: 2.85em;
+  border: 4px solid dodgerblue;
+  width: 40px;
+  height: 40px;
+  margin: .45em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+  box-shadow: 1px 1px 2px #446CB3;
+  cursor: pointer;
+}
+
+.card .fas {
+  font-size: 5em;
+  color: dodgerblue;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 4px #446CB3;
+}
+
+.found {
+  box-shadow: 0 0 20px navy;
+  cursor: default;
+}
+
+.found:hover {
+  box-shadow: 0 0 20px navy;
+}
+
+.player {
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  padding: .65em;
+  border-radius: 5px;
+  margin-left: .5em;
+}
+
+.player span i {
+  min-width: 22px;
+}
+
+.red {
+  background-color: red;
+}
+
+#scores {
+  float: right;
+  display: flex;
+  font-size: 1em;
+  color: white;
+}
+
+[data-player] {
+  width: 15px;
+  text-align: center;
+  font-weight: bold;
+}
